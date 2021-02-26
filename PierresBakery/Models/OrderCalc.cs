@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace PierresBakery.Models
 {
-  public class OrderCalc
+  public class OrderHandler
   {
     private int _pastryAmount;
     private int _breadAmount;
-    public OrderCalc(int pastryAmount, int breadAmount)
+    public OrderHandler(int pastryAmount, int breadAmount)
     {
       _pastryAmount = pastryAmount;
       _breadAmount = breadAmount;
@@ -35,55 +35,94 @@ namespace PierresBakery.Models
     // }
   }
 
-  public class Pastry
+  public static class OrderSetter
   {
-    private int _purchaseAmount;
-    public Pastry(int _pAmount)
+    public static int PricePush(int _amount, int _dealThreshold, int _price)
     {
-      // _purchaseAmount = _bAmount;
-      int _totalPastryCost = 0;
-      int _price = 5;
-      int _dealThreshold = 3;
+      int totalCost = 0;
       int _dealCounter = 0;
-      for (int i = 0; i < _pAmount; i++)
+      for (int i = 0; i < _amount; i++)
       {
         if(_dealCounter < _dealThreshold)
         {
-          _totalPastryCost += _price;
+          totalCost += _price;
           _dealCounter ++;
         }
         else
         {
+          totalCost += 1;
           _dealCounter = 0;
         }
       }
-    Console.WriteLine(_totalPastryCost);
+      return totalCost;
     }
   }
 
-  public class Bread
-  {
-    // private int _purchaseAmount;
-    public Bread(int _bAmount)
-    {
-      // _purchaseAmount = _bAmount;
-      int _totalBreadCost = 0;
-      int _price = 5;
-      int _dealThreshold = 2;
-      int _dealCounter = 0;
-      for (int i = 0; i < _bAmount; i++)
-      {
-        if(_dealCounter < _dealThreshold)
-        {
-          _totalBreadCost += _price;
-          _dealCounter ++;
-        }
-        else
-        {
-          _dealCounter = 0;
-        }
-      }
-    Console.WriteLine(_totalBreadCost);
-    }
-  }
+
+
+
+
+
+
+
+
+
+
+
+  // public class Pastry
+  // {
+  //   int totalPastryCost = 0;
+  //   public Pastry(int _pAmount)
+  //   {
+  //     int _price = 2;
+  //     int _dealThreshold = 2;
+  //     int _dealCounter = 0;
+  //     for (int i = 0; i < _pAmount; i++)
+  //     {
+  //       if(_dealCounter < _dealThreshold)
+  //       {
+  //         totalPastryCost += _price;
+  //         _dealCounter ++;
+  //       }
+  //       else
+  //       {
+  //         totalPastryCost += 1;
+  //         _dealCounter = 0;
+  //       }
+  //     }
+  //   PastryPrice();
+  //   }
+  //   public int PastryPrice()
+  //   {
+  //     OrderCalc.
+  //     return totalPastryCost;
+  //   }
+  // }
+
+  // public class Bread
+  // {
+  //   int totalBreadCost = 0;
+  //   public Bread(int _bAmount)
+  //   {
+  //     int _price = 5;
+  //     int _dealThreshold = 2;
+  //     int _dealCounter = 0;
+  //     for (int i = 0; i < _bAmount; i++)
+  //     {
+  //       if(_dealCounter < _dealThreshold)
+  //       {
+  //         totalBreadCost += _price;
+  //         _dealCounter ++;
+  //       }
+  //       else
+  //       {
+  //         _dealCounter = 0;
+  //       }
+  //     }
+  //   }
+  //   public int PastryPrice()
+  //   {
+  //     return totalBreadCost;
+  //   }
+  // }
 }

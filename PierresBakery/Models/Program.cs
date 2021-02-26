@@ -38,44 +38,44 @@ namespace PierresBakery.Models
   {
     public static void Main()
     {
-      Console.WriteLine("Hello and welcome to Pierre's Bakery");
+      Console.WriteLine("Hello and welcome to Pierre's Bakery");  //Greet user
       UserChoice();
     }
 
     public static void UserChoice()
     {
-      Console.WriteLine("What would you like to do today?");
+      Console.WriteLine("What would you like to do today?");  //Prompt and capture userChoice for menu
       Console.WriteLine("1 for Place Order");
       Console.WriteLine("2 for Specials");
       Console.WriteLine("3 to Exit");
       string userChoice = Console.ReadLine();
       if(userChoice == "1")
       {
-        Console.WriteLine("OK!  Let's get your order started!");
-        OrderCalc userOrder = new OrderCalc(0,0);
+        Console.WriteLine("OK!  Let's get your order started!");  //Prompt and capture userChoice for item
+        OrderHandler userOrder = new OrderHandler(0,0);
         Console.WriteLine("What would you like to order?");
         Console.WriteLine("Enter 1 for bread");
         Console.WriteLine("Enter 2 for pastries");
         userChoice = Console.ReadLine();
         if(userChoice == "1")
         {
-          Console.WriteLine("You chose Bread YUM!");
+          Console.WriteLine("You chose Bread YUM!");  //Prompt and capture userChoice for bread amount
           Console.WriteLine("Enter how many loaves of bread you would like:");
           int _userChoice = int.Parse(Console.ReadLine());
-          Bread breadOrder = new Bread(_userChoice);
+          // Bread breadOrder = new Bread(_userChoice);
           Console.WriteLine("You want " + _userChoice + " loaves of bread");
         }
         else if(userChoice == "2")
         {
-          Console.WriteLine("You chose Pastry YUM!");
+          Console.WriteLine("You chose Pastry YUM!");  //Prompt and capture userChoice for pastry amount
           Console.WriteLine("Enter how many pastries you would like:");
           int _userChoice = int.Parse(Console.ReadLine());
-          Pastry pastryOrder = new Pastry(_userChoice);
+          // Pastry pastryOrder = new Pastry(_userChoice);
           Console.WriteLine("You want " + _userChoice + " pastries!");
         }
         else
         {
-          Console.WriteLine("Please enter a valid choice");
+          Console.WriteLine("Please enter a valid choice");  //Prompt user to enter valid choice
           UserChoice();
         }
       }
