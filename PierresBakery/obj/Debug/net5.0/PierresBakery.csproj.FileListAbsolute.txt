@@ -1,0 +1,16 @@
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\bin\Debug\net5.0\PierresBakery.exe
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\bin\Debug\net5.0\PierresBakery.deps.json
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\bin\Debug\net5.0\PierresBakery.runtimeconfig.json
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\bin\Debug\net5.0\PierresBakery.runtimeconfig.dev.json
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\bin\Debug\net5.0\PierresBakery.dll
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\bin\Debug\net5.0\ref\PierresBakery.dll
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\bin\Debug\net5.0\PierresBakery.pdb
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\obj\Debug\net5.0\PierresBakery.csprojAssemblyReference.cache
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\obj\Debug\net5.0\PierresBakery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\obj\Debug\net5.0\PierresBakery.AssemblyInfoInputs.cache
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\obj\Debug\net5.0\PierresBakery.AssemblyInfo.cs
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\obj\Debug\net5.0\PierresBakery.csproj.CoreCompileInputs.cache
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\obj\Debug\net5.0\PierresBakery.dll
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\obj\Debug\net5.0\ref\PierresBakery.dll
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\obj\Debug\net5.0\PierresBakery.pdb
+C:\Users\james\onedrive\desktop\epicodus\pierresbakery.solution\PierresBakery\obj\Debug\net5.0\PierresBakery.genruntimeconfig.cache

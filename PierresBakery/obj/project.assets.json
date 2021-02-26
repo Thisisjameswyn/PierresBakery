@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj",
+      "projectUniqueName": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj",
       "projectName": "PierresBakery",
-      "projectPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj",
+      "projectPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj",
       "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\PierresBakery\\obj\\",
+      "outputPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\PierresBakery\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"
