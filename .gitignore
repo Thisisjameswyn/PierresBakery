@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+dist/
+notes.txt
+coverage/
+.env
+PierresBakery.Solution/PierresBakery/bin/
+PierresBakery.Solution/PierresBakery/obj/
+PierresBakery.Solution/PierresBakery.Tests/bin/
+PierresBakery.Solution/PierresBakery.Tests/obj/
