@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\pierresbakery.tests\\PierresBakery.Tests.csproj": {}
+    "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\pierresbakery.tests\\PierresBakery.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\pierresbakery.tests\\PierresBakery.Tests.csproj": {
+    "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\pierresbakery.tests\\PierresBakery.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\pierresbakery.tests\\PierresBakery.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\pierresbakery.tests\\PierresBakery.Tests.csproj",
         "projectName": "PierresBakery.Tests",
-        "projectPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\pierresbakery.tests\\PierresBakery.Tests.csproj",
+        "projectPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\pierresbakery.tests\\PierresBakery.Tests.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\pierresbakery.tests\\obj\\",
+        "outputPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\pierresbakery.tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj": {
-                "projectPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj"
+              "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj": {
+                "projectPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj": {
+    "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj",
+        "projectUniqueName": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj",
         "projectName": "PierresBakery",
-        "projectPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj",
+        "projectPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\PierresBakery\\PierresBakery.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\PierresBakery\\obj\\",
+        "outputPath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\PierresBakery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"

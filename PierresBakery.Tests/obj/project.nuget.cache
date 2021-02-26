@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l49j1+x3iZxehQ3AE3XmTxIGkA805TcZ43hFzn0jj9Ux7SKAqgtN9Ps3p9Y7Kenj+y6a2XwbtsojUCgW/Btlbg==",
+  "dgSpecHash": "sqTMWo3Ev/CSqG+IewyO5lC/yg96+Gy+JjIMiRfNYEIXP2mGFAW979wTOZnqZppV0Z6sfNwn+qPSxKvXiAlOPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery\\pierresbakery.solution\\pierresbakery.tests\\PierresBakery.Tests.csproj",
+  "projectFilePath": "C:\\Users\\james\\onedrive\\desktop\\epicodus\\pierresbakery.solution\\pierresbakery.tests\\PierresBakery.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\james\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.net.test.sdk\\15.0.0\\microsoft.net.test.sdk.15.0.0.nupkg.sha512",
