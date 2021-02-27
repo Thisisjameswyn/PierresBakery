@@ -44,41 +44,72 @@ namespace PierresBakery.Models
 
     public static void UserChoice()
     {
-      Console.WriteLine("What would you like to do today?");  //Prompt and capture userChoice for menu
-      Console.WriteLine("1 for Place Order");
-      Console.WriteLine("2 for Specials");
-      Console.WriteLine("3 to Exit");
+      Console.WriteLine("What would you like to do today?\n"+  //Prompt and capture userChoice for menu
+      "1 for Place Order\n"+
+      "2 for Specials\n"+
+      "3 to Exit\n");
       string userChoice = Console.ReadLine();
       if(userChoice == "1")
       {
         Console.WriteLine("OK!  Let's get your order started!");  //Prompt and capture userChoice for item
-        OrderHandler userOrder = new OrderHandler(0,0);
-        Console.WriteLine("What would you like to order?");
-        Console.WriteLine("Enter 1 for bread");
-        Console.WriteLine("Enter 2 for pastries");
+        OrderHandler userOrder = new OrderHandler();
+        Order(userOrder);
+      }
+    }
+
+    public static void Order(OrderHandler _userOrder)
+    {
+      Console.WriteLine("What would you like to order?\n"+
+      "Enter 1 for bread\n"+
+      "Enter 2 for pastries");
+      string userChoice = Console.ReadLine();
+      if(userChoice == "1")
+      {
+        Console.WriteLine("You chose Bread YUM!");  //Prompt and capture userChoice for bread amount
+        Console.WriteLine("Enter how many loaves of bread you would like:");
+        int _userChoice = int.Parse(Console.ReadLine());  //how much we want
+        _userOrder.SetPurchaseAmount(_userChoice, "Bread");
+        Console.WriteLine("You have selected " + _userChoice + " loaves of bread\n"+
+        "Would you like to add these to your cart?\n"+
+        "Enter 1 for Yes\n"+
+        "Enter 2 for No");
         userChoice = Console.ReadLine();
         if(userChoice == "1")
         {
-          Console.WriteLine("You chose Bread YUM!");  //Prompt and capture userChoice for bread amount
-          Console.WriteLine("Enter how many loaves of bread you would like:");
-          int _userChoice = int.Parse(Console.ReadLine());
-          // Bread breadOrder = new Bread(_userChoice);
-          Console.WriteLine("You want " + _userChoice + " loaves of bread");
+          Console.WriteLine(_userOrder.GetOrderAmount("Bread") + " loaves.");
         }
         else if(userChoice == "2")
         {
-          Console.WriteLine("You chose Pastry YUM!");  //Prompt and capture userChoice for pastry amount
-          Console.WriteLine("Enter how many pastries you would like:");
-          int _userChoice = int.Parse(Console.ReadLine());
-          // Pastry pastryOrder = new Pastry(_userChoice);
-          Console.WriteLine("You want " + _userChoice + " pastries!");
+          _userOrder.SetPurchaseAmount(0, "Bread");
+          Order(_userOrder);
+        }
+      }
+      else if(userChoice == "2")
+      {
+        Console.WriteLine("You chose Pastry YUM!");  //Prompt and capture userChoice for pastry amount
+        Console.WriteLine("Enter how many pastries you would like:");
+        int _userChoice = int.Parse(Console.ReadLine());
+        _userOrder.SetPurchaseAmount(_userChoice, "Pastry");
+        Console.WriteLine("You have selected " + _userChoice + " pastries\n"+
+        "Would you like to add these to your cart?\n"+
+        "Enter 1 for Yes\n"+
+        "Enter 2 for No");
+        userChoice = Console.ReadLine();
+        if(userChoice == "1")
+        {
+          Console.WriteLine(_userOrder.GetOrderAmount("Pastry") + " pastries.");
+        }
+        else if(userChoice == "2")
+        {
+          _userOrder.SetPurchaseAmount(0, "Pastry");
+          Order(_userOrder);
         }
         else
         {
-          Console.WriteLine("Please enter a valid choice");  //Prompt user to enter valid choice
-          UserChoice();
+        Console.WriteLine("Please enter a valid choice");  //Prompt user to enter valid choice
+        UserChoice();
         }
-      }
+      }     
     }
   }
-} 
+}

@@ -5,23 +5,25 @@ namespace PierresBakery.Models
 {
   public class OrderHandler
   {
-    private int _pastryAmount;
-    private int _breadAmount;
-    public OrderHandler(int pastryAmount, int breadAmount)
+    private int pastryAmount;
+    private int breadAmount;
+    public OrderHandler()
     {
-      _pastryAmount = pastryAmount;
-      _breadAmount = breadAmount;
+      int _breadAmount = breadAmount;
+      int _pastryAmount = pastryAmount;
+      int breadCost = 0;
+      int pastryCost = 0;
     }
 
     public void SetPurchaseAmount(int purchaseAmount, string itemType)
     {
       if(itemType == "Bread")
       {
-        _breadAmount += purchaseAmount;
+        breadAmount += purchaseAmount;
       }
       else if(itemType == "Pastry")
       {
-        _pastryAmount += purchaseAmount;
+        pastryAmount += purchaseAmount;
       }
       // else
       // {
@@ -29,15 +31,27 @@ namespace PierresBakery.Models
       // }
     }
 
-    // public int GetOrderAmount()
+    // public void PushOrder()
     // {
-    //   return 
+    //   OrderSetter.CostPush()
     // }
+
+    public int GetOrderAmount(string _type)
+    {
+      if(_type == "Bread")
+      {
+        return breadAmount;
+      }
+      else
+      {
+        return pastryAmount;
+      }
+    }
   }
 
   public static class OrderSetter
   {
-    public static int PricePush(int _amount, int _dealThreshold, int _price)
+    public static int CostPush(int _amount, int _dealThreshold, int _price, int _dealPrice)
     {
       int totalCost = 0;
       int _dealCounter = 0;
