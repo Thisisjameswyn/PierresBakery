@@ -1,18 +1,28 @@
-using System;
-using System.Collections.Generic;
-
 namespace PierresBakery.Models
 {
   public class OrderHandler
   {
-    private int pastryAmount;
     private int breadAmount;
+    private int pastryAmount;
+    private int breadCost;
+    private int pastryCost;
     public OrderHandler()
     {
       int _breadAmount = breadAmount;
       int _pastryAmount = pastryAmount;
-      int breadCost = 0;
-      int pastryCost = 0;
+      int _breadCost = breadCost;
+      int _pastryCost = pastryCost;
+    }
+    public int GetOrderAmount(string _type)
+    {
+      if(_type == "Bread")
+      {
+        return breadAmount;
+      }
+      else
+      {
+        return pastryAmount;
+      }
     }
 
     public void SetPurchaseAmount(int purchaseAmount, string itemType)
@@ -25,27 +35,38 @@ namespace PierresBakery.Models
       {
         pastryAmount += purchaseAmount;
       }
-      // else
-      // {
-      //   "Something went wrong"
-      // }
     }
 
-    // public void PushOrder()
-    // {
-    //   OrderSetter.CostPush()
-    // }
-
-    public int GetOrderAmount(string _type)
+    public void PushOrder(string _type)
     {
       if(_type == "Bread")
       {
-        return breadAmount;
+        breadCost = OrderSetter.CostPush(breadAmount, 2, 5, 0); 
       }
       else
       {
-        return pastryAmount;
+        pastryCost = OrderSetter.CostPush(pastryAmount, 2, 2, 1);
       }
+    }
+
+    public int GetOrderCost(string _type)
+    {
+      if(_type == "Bread")
+      {
+        return breadCost;
+      }
+      else
+      {
+        return pastryCost;
+      }
+    }
+
+    public void EmptyCart()
+    {
+      breadAmount = 0;
+      pastryAmount = 0;
+      breadCost = 0;
+      pastryCost = 0;
     }
   }
 
@@ -64,7 +85,7 @@ namespace PierresBakery.Models
         }
         else
         {
-          totalCost += 1;
+          totalCost += _dealPrice;
           _dealCounter = 0;
         }
       }
