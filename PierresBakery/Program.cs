@@ -1,6 +1,7 @@
+using PierresBakery.Models;
 using System;
 
-namespace PierresBakery.Models
+namespace PierresBakery
 {
   public class Program
   {
@@ -22,7 +23,7 @@ namespace PierresBakery.Models
       if(userChoice == "1")
       {
         Console.WriteLine("OK!  Let's get your order started!");
-        OrderHandler userOrder = new OrderHandler();
+        OrderSetter userOrder = new OrderSetter();
         Order(userOrder);
       }
       else if(userChoice == "2")
@@ -39,12 +40,12 @@ namespace PierresBakery.Models
       }
     }
 
-    public static void Order(OrderHandler _userOrder)
+    public static void Order(OrderSetter _userOrder)
     {
       Console.WriteLine( "you currently have: \n"+
-      _userOrder.GetOrderAmount("Bread") + " loaves at a cost of $" + _userOrder.GetOrderCost("Bread") + "\n"+
+      _userOrder.BreadAmount + " loaves at a cost of $" + _userOrder.BreadCost+ "\n"+
       "and \n"+
-      _userOrder.GetOrderAmount("Pastry") + " pastries at a cost of $" + _userOrder.GetOrderCost("Pastry") + "\n"+
+      _userOrder.PastryAmount + " pastries at a cost of $" + _userOrder.PastryCost + "\n"+
       "What would you like to order?\n"+
       "Enter 1 for bread\n"+
       "Enter 2 for pastries\n"+
@@ -57,7 +58,7 @@ namespace PierresBakery.Models
         Console.WriteLine("You chose Bread YUM!");
         Console.WriteLine("Enter how many loaves of bread you would like:");
         int _userChoice = int.Parse(Console.ReadLine());
-        _userOrder.SetPurchaseAmount(_userChoice, "Bread");
+        _userOrder.BreadAmount += _userChoice;
         Console.WriteLine("You have selected " + _userChoice + " loaves of bread\n"+
         "Would you like to add these to your cart?\n"+
         "Enter 1 for Yes\n"+
@@ -70,7 +71,7 @@ namespace PierresBakery.Models
         }
         else if(userChoice == "2")
         {
-          _userOrder.SetPurchaseAmount(-_userChoice, "Bread");
+          _userOrder.BreadAmount -= _userChoice;
           Order(_userOrder);
         }
       }
@@ -79,7 +80,7 @@ namespace PierresBakery.Models
         Console.WriteLine("You chose Pastry YUM!");
         Console.WriteLine("Enter how many pastries you would like:");
         int _userChoice = int.Parse(Console.ReadLine());
-        _userOrder.SetPurchaseAmount(_userChoice, "Pastry");
+        _userOrder.PastryAmount += _userChoice;
         Console.WriteLine("You have selected " + _userChoice + " pastries\n"+
         "Would you like to add these to your cart?\n"+
         "Enter 1 for Yes\n"+
@@ -92,7 +93,7 @@ namespace PierresBakery.Models
         }
         else if(userChoice == "2")
         {
-          _userOrder.SetPurchaseAmount(-_userChoice, "Pastry");
+          _userOrder.PastryAmount -= _userChoice;
           Order(_userOrder);
         }
         else
@@ -103,7 +104,7 @@ namespace PierresBakery.Models
       }
       else if(userChoice =="3")
       {
-        int totalCost = _userOrder.GetOrderCost("Bread") + _userOrder.GetOrderCost("Pastry");
+        int totalCost = _userOrder.BreadCost + _userOrder.PastryCost;
         Console.WriteLine("You choose to checkout:\n"+
         "your total is $" + totalCost);
       } 

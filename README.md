@@ -26,8 +26,8 @@ From the Terminal:
     You need to have .net Core 5.0 installed on your machine in order to run this program.
     Clone the repository from GitHub using git clone https://github.com/Thisisjameswyn/PierresBakery
     Navigate to the downloaded folder using the cd command
-    To run the application, navigate to the Bakery folder, and type dotnet run
-    To run the tests, navigate to the PierresBakery.Tests folder, and type dotnet restore
+    To run the application, navigate to the Bakery folder, and type dotnet restore then dotnet run in the terminal.
+    To run the tests, navigate to the PierresBakery.Tests folder, and type dotnet test in the terminal.
 
 
 * * *
